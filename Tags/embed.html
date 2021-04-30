@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Embedding Videos</title>
+<style>
+footer {
+    font-size: .8rem;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.output {
+    background: #eee;
+    position: relative;
+}
+form.form-example {
+    display: table;
+}
+
+div.form-example {
+    display: table-row;
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+</style>
+</head>
+<body>
+<div align="center" title="Our Popup">
+<h1 title="Video Embed 101">Video Embedding Example</h1>
+<embed type="video/webm"
+       src="Video/ourvideo.mp4"
+       width="250"
+       height="200">
+	   <h2>FUBI'S COMMEDY EPISODE 45</h2>
+	   <p>This video shows a comedy scene that was produced, acted and directed by FUBI. It's so hilarious that you would laugh out loud.</p>
+	   </div>
+	   <hr>	   
+<div align="center">
+<div title="Our YouTube Pop">
+	   <iframe width="324" height="182" src="https://www.youtube.com/embed/Z3KzLwA3Jww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<h2>HOME BUSINESS EPISODE 15</h2>
+		<p>This video <mark>HOME BUSINESS EPISODE 15</mark> is a very nice video about doing business at home.</p>
+</div>
+</div>	  
+	  <hr>
+<div align="center" class="">
+
+	   <form method="POST" action="">
+	   <div class="form-example">
+    <label for="name">Enter your name: </label>
+	   <input name="name" type="number" required>
+	   </div>
+	   <div class="form-example">
+    <label for="email">Enter your email: </label>
+	   <input name="email" type="email" required>
+	   </div>
+	   <div class="form-example">
+    <label for="address">Enter your Address: </label>
+	   <input name="address" type="text" required>
+	   </div>	   
+	   <div class="form-example">
+    <label for="password">Enter your Password: </label>
+	   <input name="password" type="password" maxlength="5" required>
+	   </div>	   
+	   <div class="form-example">
+    <label for="date">Enter Today's Date: </label>
+	   <input name="date" type="date" required>	
+	   </div>   
+	   <div class="form-example">
+    <label for="time">Enter the Current Time: </label>
+	   <input name="time" type="time" required>	
+	   </div> 
+	   <div class="form-example">
+    <label for="search">Search this Blog: </label>
+	   <input type="search" id="search" name="search">
+	   </div>
+	   <div class="form-example">
+	   <label for="price">Choose a maximum house price: </label>
+<input type="range" name="price" id="price" min="50000" max="500000" step="100" value="450000">
+<output class="price-output" for="price"></output>
+</div>
+	   <div class="form-example">
+	   <label for="color">Choose your Favorite color: </label>
+	   <input type="color" name="color" id="color">
+</div>
+
+	    <input type="submit" value="Register">
+	   </form>	   
+	   </div>
+	   <div>
+	   <form>
+  <h2>Edit your preferences</h2>
+  <ul>
+    <li>
+      <label for="e-mail">Email</label>
+<input type="email" name="e-mail" id="e-mail">
+    </li>
+    <li>
+      <label for="website">Website</label>
+<input type="url" name="website" id="websitel">
+    </li>
+    <li>
+      <label for="phone">Phone number</label>
+<input type="tel" name="phone" id="phone">
+    </li>
+    <li>
+      <label for="fave-color">Favorite color</label>
+<input type="color" name="fave-color" id="fave-color">
+    </li>
+    <li>
+      <button>Update preferences</button>
+    </li>
+  </ul>
+</form>
+</div>
+<div>
+    <form>
+  <ul>
+    <li>
+      <label for="max-invite">Select maximum number of invitations</label>
+      <input type="number" name="invites" max="20">
+    </li>
+    <li>
+      <button>Submit</button>
+    </li>
+  </ul>
+</form>
+</div>
+<hr>
+<div align="right">
+<form method="POST" action="">
+<div class="form-example">
+<label for="email">Email</label>
+<input type="email" id="email" name="email" multiple>
+</div>
+<div class="form-example">
+<label for="search">Search for your blog</label>
+<input type="search" id="search" name="search">
+</div>
+<div class="form-example">
+<label for="tel">Phone Number</label>
+<input type="tel" id="tel" name="tel">
+</div>
+<div class="form-example">
+<label for="url">Your website URL</label>
+<input type="url" id="url" name="url" autocomplete="off">
+</div>
+<div class="form-example">
+<label for="age">Age</label>
+<input type="number" name="age" id="age" min="18" max="45" step="1">
+</div>
+<div class="form-example">
+<label for="price">Choose a maximum car price: </label>
+<input type="range" name="price" id="price" min="500000" max="25000000" step="1000" value="1000">
+<output class="price-output" for="price"></output>
+</div>
+<div class="form-example">
+<label for="datetime">Datetime</label>
+<input type="datetime-local" name="datetime" id="datetime">
+</div>
+<div class="form-example">
+<label for="month">Month</label>
+<input type="month" name="month" id="month">
+</div>
+<div class="form-example">
+<label for="time">Time</label>
+<input type="time" name="time" id="time">
+</div>
+<div class="form-example">
+<label for="week">Week of delivery</label>
+<input type="week" name="week" id="week">
+</div>
+<div class="form-example">
+<label for="color">Car Color</label>
+<input type="color" id="color" name="color" multiple>
+</div>
+<div class="form-example">
+<label for="textarea" placeholder="Type your Comment here but, please limit it to 800 words">COMMENT</label>
+<textarea col="30" rows="8"></textarea>
+</div>
+<div class="form-example">
+<label for="categories of food">Categories of Food</label>
+<select name="food" id="food">
+<optgroup label="fruits">
+<option>Banana</option>
+<option selected>Cherry</option>
+<option>Lemon</option>
+</optgroup>
+<optgroup label="vegetables">
+<option>Carrot</option>
+<option>Eggplant</option>
+<option>Potato</option>
+</optgroup>
+</select>
+</div>
+<br>
+<input type="submit" value="register">
+</form>
+</div>
+<hr>
+<div>
+<form method="POST" action="">
+<div class="form-example">
+<label for="ice-cream">Favorite Ice-Cream Flavour</label>
+<input type="text" name="ice-cream" id="ice-cream" list="ice-cream Flavours">
+<datalist id="ice-cream Flavours"
+<option>Chocolate</option>
+<option>Strawberries</option>
+<option>Coconut</option>
+</div>
+<div class="form-example">
+<label for="car">What is your favorite car? (With fallback)</label>
+<input type="text" id="car" name="car" list="car-brand">
+<datalist id="car-brand">
+  <label for="suggestion">or pick a car</label>
+  <select id="suggestion" name="altcar">
+    <option>TOYOTA</option>
+    <option>HIGH LANDER</option>
+    <option>FELARRI</option>
+    <option>BENZ</option>
+    <option>ACURA</option>
+    <option>APPLE</option>
+    <option>THUNDRA</option>
+  </select>
+</datalist>
+</div>
+<div class="form-example">
+<label>SATISFIED CUSTOMERS</label>
+<progress max="100" value="75">75/100</progress>
+</div>
+<div class="form-example">
+<input type="reset" value="Reset">
+</div>
+</form>
+</div>
+<div>
+<form method="POST" action="">
+<div>
+<input type="radio"> Male
+</div>
+<input type="radio">Female
+</div>
+<input type="checkbox">Male
+</div>
+<div>
+<input type="checkbox">Female
+</div>
+<div class="form-example">
+<input type="file" value="Choose File">
+</div>
+<div class="form-example">
+<input type="number" min="1" step="6">
+</div>
+<div class="form-example">
+<input type="reset" value="reset">
+</div>
+</form>
+</div>
+<hr>
+<div>
+<fieldset>
+    <legend>Choose your favorite monster</legend>
+    <input type="radio" id="kraken" name="monster">Kraken
+    <br>
+    <input type="radio" id="sasquatch" name="monster">Sasquatch
+    <br>
+    <input type="radio" id="mothman" name="monster">Mothman
+</fieldset>
+<div>
+<input id="prodId" name="prodId" type="hidden" value="xm234jq">
+</div>
+</div>
+</body>
+</html>
